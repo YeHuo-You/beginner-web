@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <!-- table（表格）嵌套tr（行），tr嵌套th（表头单元格）/td（内容单元格） -->
+    <!-- 在网页中，表格默认没有边框线。加上border属性，引号中数字表示几像素的边框线粗细 -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>99</td>
+                <td>100</td>
+                <td>199</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>98</td>
+                <td>100</td>
+                <td>198</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td>全市第一</td>
+                <td>全市第一</td>
+                <td>全市第一</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- 表格结构标签：把内容划分区域，让表格结构/语义更清晰（写在table里面）
+    thead 表格头部 表格头部内容
+    tbody 表格主体 主要内容区域
+    tfoot 表格底部 汇总信息区域 
+    (了解即可，工作中常省略)-->
+
+    <!-- 合并单元格（合并同类信息）：
+     跨行合并（合并相同的行）：保留最上面的单元格，加属性rowspan（取值为数字，表示需要合并的单元格数量）
+     跨列合并（合并相同的列）：保留最左边的单元格，加属性colspan（取值为数字，表示需要合并的单元格数量）
+     删除其他单元格 -->
+
+    <!-- 不能跨结构标签合并 -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>99</td>
+                <td rowspan="2">100</td>
+                <td>199</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>98</td>
+                <td>198</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="3">全市第一</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
