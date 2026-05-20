@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- 作用：收集用户信息
+    使用场景：登录页面，注册页面，搜索区域 -->
+
+    <!-- input标签：type属性值不同，则功能不同 
+     text：文本框，用于输入单行文本（不换行）
+     password：密码框（隐藏输入内容）
+     radio：单选框(圆形框)
+     checkbox：多选框（方形框）
+     file：上传文件-->
+
+    姓名：<input type="text">
+    <br>
+    密码：<input type="password">
+    <br>
+    性别：<input type="radio">
+    <br>
+    爱好：<input type="checkbox">
+    <br>
+    附件：<input type="file">
+    <br><br>
+
+    <!-- input标签占位文本：提示信息（文本框和密码框都可以使用） -->
+    文本框：<input type="text" placeholder="请输入用户名">
+    <br>
+    密码框：<input type="password" placeholder="请输入密码">
+    <br><br>
+
+    <!-- 单选框radio常用属性：
+     name：控件名称，控件分组，同组只能选中一个（单选功能），引号中名字自取，最好见名知意
+     checked：默认选中，属性名和属性值相同，简写为一个单词checked -->
+    性别：
+    <input type="radio" name="gender">男
+    <input type="radio" name="gender" checked>女
+    <br><br>
+
+    <!-- 默认情况下，文件上传表单控件只能上传一个文件，添加multiple属性可以实现文件多选功能 -->
+    上传文件：<input type="file" multiple>
+    <br><br>
+
+    <!-- 多选框（复选框）checkbox
+    默认选中：checked -->
+    兴趣爱好：
+    <input type="checkbox">敲代码
+    <input type="checkbox" checked>敲前端代码
+    <input type="checkbox" checked>敲前端HTML代码
+    <br><br>
+
+    <!-- 下拉菜单：select嵌套option，select是下拉菜单整体，option是下拉菜单的每一项
+    selected默认选中 -->
+    城市：
+    <select>
+        <option>北京</option>
+        <option>上海</option>
+        <option>武汉</option>
+        <option selected>深圳</option>
+    </select>
+    <br><br>
+
+    <!-- 文本域：多行输入文本的表单控件
+    右下角两个斜杠，可以拖拽以改变文本域大小，工作中禁用
+    未来会用CSS设置尺寸 -->
+    <textarea>请输入评论</textarea>
+    <br><br>
+
+    <!-- label标签：网页中，某个标签的说明文本
+    用label标签绑定文字和表单控件的关系，增大表单控件（文本框、密码框、上传文件、单选框、多选框、下拉菜单、文本域等等）的点击范围 -->
+    <!-- 写法1：label标签只包裹内容，不包裹表单控件
+    设置label标签的for属性值和表单控件的id属性值相同 -->
+    性别：
+    <input type="radio" id="men" name="gender1">
+    <label for="men">男</label>
+    <input type="radio" id="women" name="gender1">
+    <label for="women">女</label>
+    <br>
+    <!-- 写法2：使用label标签包裹文字和表单控件，不需要属性 -->
+    性别：
+    <label><input type="radio" name="gender2">男</label>
+    <label><input type="radio" name="gender2">女</label>
+
+    <!-- 按钮-button -->
+</body>
+</html>
