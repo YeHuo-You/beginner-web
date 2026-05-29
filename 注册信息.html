@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册信息</title>
+</head>
+<body>
+    <h2>注册信息</h2>
+    <form>
+        <!-- 表单控件 -->
+        <!-- 个人信息 -->
+        <h3>个人信息</h3>
+        <label>姓名：<input type="text"></label>
+        <br><br>
+        <label>密码：<input type="password"></label>
+        <br><br>
+        <label>确认密码：<input type="password"></label>
+        <br><br>
+        性别：
+        <label><input type="radio" name="gender">男</label>
+        <label><input type="radio" name="gender">女</label>
+        <br><br>
+        居住城市：
+        <select>
+            <option selected>北京</option>
+            <option>上海</option>
+            <option>深圳</option>
+            <option>长沙</option>
+        </select>
+
+        <!-- 教育经历 -->
+        <h3>教育经历</h3>
+        最高学历：
+        <select>
+            <option selected>博士</option>
+            <option>硕士</option>
+            <option>学士</option>
+            <option>高中</option>
+        </select>
+        <br><br>
+        <label>学校名称：<input type="text"></label>
+        <br><br>
+        <label>所学专业：<input type="text"></label>
+        <br><br>
+        在校时间：
+        <select>
+            <option selected>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+        </select>
+        --
+        <select>
+            <option selected>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+        </select>
+
+        <!-- 工作经历 -->
+        <h3>工作经历</h3>
+        <label>公司名称：<input type="text"></label>
+        <br><br>
+        <label>工作描述：
+        <br>
+        <textarea></textarea></label>
+        <br><br>
+
+        <!-- 协议 -->
+        <label><input type="radio">已阅读并同意以下协议：</label>
+        <br>
+        <ul>
+            <li><a href="./《用户服务协议》.html" target="_blank">《用户服务协议》</a></li>
+            <li><a href="./《隐私政策》.html" target="_blank">《隐私政策》</a></li>
+        </ul>
+        <br><br>
+
+        <!-- 按钮 -->
+        <button type="submit">免费注册</button>
+        <button type="reset">重新填写</button>
+    </form>
+</body>
+</html>

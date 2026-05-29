@@ -1,0 +1,8 @@
+/* 这个文件放CSS代码 */
+/* 和style里的一样，选择器{CSS属性} */
+p{
+    color:aqua;
+}
+div{
+    color: aquamarine;
+}

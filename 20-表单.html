@@ -84,7 +84,45 @@
     性别：
     <label><input type="radio" name="gender2">男</label>
     <label><input type="radio" name="gender2">女</label>
+    <br><br>
 
-    <!-- 按钮-button -->
+    <!-- 按钮-button
+     type属性值：
+     submit提交按钮，点击后可以提交数据到后台（默认功能）
+     reset重置按钮，点击后将表单控件恢复默认值
+     button普通按钮，默认没有功能，一般配合JavaScript使用
+     要用form表单区域标签包裹起来才起作用 -->
+    <!-- action发送数据的地址，数据交到哪里 -->
+    <form action="">
+        用户名：<input type="text" placeholder="请输入用户名">
+        <br>
+        密码：<input type="password" placeholder="请输入密码">
+        <br>
+        <!-- 省略type属性，功能是提交 -->
+        <button>提交</button>
+        <button type="reset">重置</button>
+        <button type="button">普通按钮</button>
+    </form>
+    <br><br>
+
+    <!-- 无语义的布局标签：布局网页（划分网页区域，摆放内容）
+     div：独占一行（大盒子）
+     span：不换行（小盒子）
+     都是双标签 -->
+    <div>这是div标签</div>
+    <div>这是div标签</div>
+    <span>这是span标签</span>
+    <span>这是span标签</span>
+    <br><br>
+
+    <!-- 字符实体：在网页中显示预留字符
+      空格&nbsp;
+     <小于号&lt;
+     >大于号&gt;-->
+    乾坤未定，你我皆是黑           马。
+    乾坤未定，你我皆是黑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;马。
+    <!-- 在代码中敲键盘的空格，网页只识别一个空格 -->
+    <p><!-- 这是p标签，网页中无法显示 -->
+    &lt;p&gt;
 </body>
 </html>
