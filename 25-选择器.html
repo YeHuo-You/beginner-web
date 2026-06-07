@@ -9,12 +9,16 @@
         p{
             color: red;
         }
-        /* 类名要见名知意，多个单词可以用-连接，例如：news-hd(head的简写) */
+        /* 类名要见名知意，多个单词可以用-连接，例如：news-hd(head的简写，新闻头部) */
         .blue{
             color: blue;
         }
         .size{
             font-size: 50px;
+        }
+
+        #green{
+            color: green;
         }
     </style>
 </head>
@@ -32,5 +36,23 @@
     <div class="blue">你好</div>
     <!-- 一个标签可以使用多个类名，类名用空格隔开 -->
     <div class="blue size">hello</div>
+
+    <!-- 一般用类选择器设置CSS样式，id选择器一般配合JavaScript使用 -->
+    <!-- 定义id选择器：#id名；使用id选择器：标签添加id="id名" -->
+    <div id="green">Hello</div>
+    <!-- 同一个id选择器在一个页面只能使用一次 -->
+
+    <!-- 通配符选择器 -->
+    <!-- 查找页面所有标签，设置相同样式 -->
+    <!-- *，不需要调用，浏览器自动查找页面所有标签，设置同样的样式 -->
+    <!--<head>
+            <style>
+                *{ 
+                    color:darkblue;
+                } 
+            </style>
+        </head>
+    -->
+    <!-- 通常在制作网页的初期使用通配符选择器，以清除标签的默认样式。比如p标签之间的空白间距，就是标签的默认样式 -->
 </body>
 </html>
